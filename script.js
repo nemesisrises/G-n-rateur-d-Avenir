@@ -1,8 +1,8 @@
 // Listes de mots pour générer des vers
-const mots1 = ["Au matin", "Au soir", "Hier", "Aujourd'hui", "Demain", "Bientôt", "Dans longtemps", "Il y a longtemps"];
-const mots2 = ["l'empereur", "l'impératrice", "l'hermite", "les amoureux", "le pendu", "le bateleur", "le pape", "la papesse", "le diable", "le fou"];
-const mots3 = ["embrasse", "épouse", "tue", "immole", "étrangle", "étouffe", "regarde", "observe", "terrifie", "admire", "craint", "délaisse", "rencontre", "oublie", "se remémore"];
-const mots4 = ["le chariot", "la roue de la fortune", "la force", "la mort", "la tour", "la tempérance", "le soleil", "l'étoile", "le monde", "la lune", "le jugement", "la justice"];
+const mots1 = ["Au matin,", "Au soir,", "Dans la nuit,", "Aujourd'hui,", "Sous les étoiles,", "Bientôt,", "Sous la lune,", "Sous le saule,"];
+const mots2 = ["je touche", "j'effleure", "je porte", "je contemple", "je murmure à", "je frôle", "j'embrasse", "j'admire", "j'épouse", "j'écoute"];
+const mots3 = ["ton coeur", "ton ombre", "ta voix", "tes mains", "ton âme", "tes lèvres", "tes yeux", "tes muscles", "ton sourire", "ton rire",];
+const mots4 = ["pour l'aimer", "pour renaître", "pour briser le silence", "pour rêver encore", "pour toucher l'infini", "pour goûter au bonheur", "pour t’appartenir", "pour t’embrasser encore", "pour raviver la flamme", "pour suspendre le temps", "pour cueillir ton désir", "pour sceller notre rêve", "pour ne jamais te perdre"];
 
 // Fonction pour générer un vers aléatoire
 function genererVers() {
