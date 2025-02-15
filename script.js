@@ -23,3 +23,8 @@ function genererPoeme() {
 
 // Ajout de l'événement au bouton
 document.getElementById("generatePoem").addEventListener("click", genererPoeme);
+
+// Fonction pour fermer le panneau explicatif
+document.getElementById("closePanel").addEventListener("click", function() {
+    document.getElementById("infoPanel").style.display = "none";
+});
