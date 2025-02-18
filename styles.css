@@ -54,32 +54,24 @@ button:hover {
     color: #5D4037; /* Brun doux */
 }
 
-.info-panel {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: rgba(255, 250, 240, 0.95); /* Ivoire légèrement transparent */
-    color: #6D4C41; /* Brun doux */
-    padding: 15px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    line-height: 1.5;
+/* Style des lignes de poème */
+.poem-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.info-panel button {
+/* Style du bouton de régénération */
+.regen-btn {
     background: none;
     border: none;
     font-size: 18px;
-    color: #8B5E3C; /* Brun caramel */
-    position: absolute;
-    top: 5px;
-    right: 8px;
+    color: #8B5E3C;
     cursor: pointer;
+    margin-left: 10px;
 }
 
-.info-panel button:hover {
-    color: #4E342E; /* Brun plus foncé au survol */
+.regen-btn:hover {
+    color: #4E342E;
 }
