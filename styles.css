@@ -39,6 +39,7 @@ button {
     border-radius: 8px;
     transition: 0.3s;
     font-family: 'Playfair Display', serif;
+    margin: 5px;
 }
 
 button:hover {
@@ -52,6 +53,7 @@ button:hover {
     line-height: 1.6;
     color: #5D4037; /* Brun doux */
 }
+
 .info-panel {
     position: fixed;
     top: 20px;
@@ -81,4 +83,3 @@ button:hover {
 .info-panel button:hover {
     color: #4E342E; /* Brun plus foncé au survol */
 }
-
