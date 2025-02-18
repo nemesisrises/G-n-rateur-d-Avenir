@@ -4,8 +4,8 @@ const mots2 = ["je touche", "j'effleure", "je porte", "je contemple", "je murmur
 const mots3 = ["ton cœur", "ton ombre", "ta voix", "tes mains", "ton âme", "tes lèvres", "tes yeux", "tes muscles", "ton sourire", "ton rire"];
 const mots4 = ["pour l'aimer", "pour renaître", "pour briser le silence", "pour rêver encore", "pour toucher l'infini", "pour goûter au bonheur", "pour t’appartenir", "pour t’embrasser encore", "pour raviver la flamme", "pour suspendre le temps", "pour cueillir ton désir", "pour sceller notre rêve", "pour ne jamais te perdre"];
 
-let versCount = 0;  // Compteur de vers
-const maxVers = 4;  // Limite de vers pour le poème
+let versCount = 0;
+const maxVers = 4;
 
 // Fonction pour générer un vers aléatoire
 function genererVers() {
@@ -15,12 +15,29 @@ function genererVers() {
             ${mots4[Math.floor(Math.random() * mots4.length)]}`;
 }
 
-// Fonction pour ajouter un vers au poème
+// Fonction pour ajouter un vers
 function ajouterVers() {
     if (versCount < maxVers) {
-        const newLine = document.createElement("p");
-        newLine.innerHTML = genererVers();
+        const newLine = document.createElement("div");
+        newLine.classList.add("poem-line");
+
+        // Générer un vers et l'afficher
+        const verseText = document.createElement("span");
+        verseText.innerHTML = genererVers();
+
+        // Bouton pour regénérer ce vers
+        const regenerateButton = document.createElement("button");
+        regenerateButton.innerHTML = "↻";
+        regenerateButton.classList.add("regen-btn");
+        regenerateButton.onclick = function () {
+            verseText.innerHTML = genererVers();
+        };
+
+        // Ajouter les éléments au poème
+        newLine.appendChild(verseText);
+        newLine.appendChild(regenerateButton);
         document.getElementById("poemDisplay").appendChild(newLine);
+
         versCount++;
     }
 }
